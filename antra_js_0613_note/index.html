@@ -145,7 +145,7 @@
     <textarea></textarea>
 
     <!-- Form Example -->
-    <form name="myForm" style="margin-top: 24px;">
+    <form id="myForm" name="myForm" style="margin-top: 24px;">
         <span class="alert alert-danger" role="alert" hidden>You failed to log in!</span>
         <span class="alert alert-success" role="alert" hidden>You logged in successfully!</span>
         <label for="fName" name="fName label">First Name: </label>
@@ -159,6 +159,7 @@
         <input type="password" id="Password" name="Password"> <br />
         <input type="submit" value="Submit Form">
         <input id = "clearForm" type="reset" value="Clear Form">
+        <input type="button" id="validateEmail" name="calidateEmail" value="Validate Email">
     </form><br/>
 
     <button id="bgColor">Change BG Color</button>

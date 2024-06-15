@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Footer</title>
+    <style>
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h4 {
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+}
+
+
+    </style>
+
+</head>
+<body>
+    <footer>
+        <div class="footer-container">
+            <section class="footer-section">
+                <h4>Corporate Office:</h4>
+                <p>21365 Ridgelop Circle</p>
+                <p>Suite #300</p>
+                <p>Dulles, VA 20166</p>
+                <p>Ph: 703-994-4565</p>
+                <p>email: info@antra.net</p>
+            </section>
+            <section class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">Technology Services</a></li>
+                    <li><a href="#">Business Advisory Services</a></li>
+                    <li><a href="#">Professional Services</a></li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">White Papers</a></li>
+                    <li><a href="#">Technology Resources</a></li>
+                </ul>
+            </section>
+            <section class="footer-section">
+                <h4>Our Locations</h4>
+                <!-- Placeholder for map or image -->
+            </section>
+            <section class="footer-section social-media">
+                <a href="https://facebook.com"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="https://twitter.com"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="https://linkedin.com"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            </section>
+        </div>
+    </footer>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .header {
+        background-color: #303f9f;
+        padding: 10px 20px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .header a {
+        color: white;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 16px;
+      }
+      .menu {
+        list-style-type: none;
+      }
+      .menu li {
+        display: inline-block;
+        position: relative;
+      }
+      .menu li a {
+        padding: 8px 12px;
+      }
+      .menu li:hover .dropdown {
+        display: block;
+      }
+
+      .dropdown {
+        display: none;
+        position: absolute;
+        background-color: #337ab7;
+
+
+
+      }
+      .dropdown a {
+        display: block;
+        padding: 12px;
+      }
+
+      .logo {
+        width: 150px; 
+        height: auto; /* this will maintain the aspect ratio */
+      }
+
+      .search-box {
+        display: flex;
+        align-items: center;
+      }
+      .search-box input[type="text"] {
+        padding: 8px;
+        margin-right: 8px;
+        border: none;
+        font-size: 16px;
+      }
+      .search-box button {
+        padding: 8px 16px;
+        background-color: #666;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      .search-box button:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <a href="https://antra.net"
+        ><img src="Antra-logo.png" alt="Antra Logo" class="logo"
+      /></a>
+      <ul class="menu">
+        <li><a href="#">NEWs</a></li>
+        <li>
+          <a href="#">About The University</a>
+          <div class="dropdown">
+            <a href="#">History</a>
+            <a href="#">Mission</a>
+            <a href="#">Accreditation</a>
+          </div>
+        </li>
+        <li>
+          <a href="#">Training Courses</a>
+          <div class="dropdown">
+            <a href="#">Course List</a>
+            <a href="#">Schedule</a>
+          </div>
+        </li>
+        <li><a href="#">For Companies</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+      <div class="search-box">
+        <input type="text" placeholder="Search..." />
+        <button>Search</button>
+      </div>
+    </div>
+  </body>
+</html>
